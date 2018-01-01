@@ -180,7 +180,7 @@
         
         if ([token isKindOfClass:[ZFTokenTextField class]]) {
             UITextField *textField = (UITextField *)token;
-            CGSize size = [textField sizeThatFits:(CGSize){CGRectGetWidth(self.bounds), lineHeight}];
+            CGSize size = [textField sizeThatFits:(CGSize){CGRectGetWidth(self.bounds) + 11, lineHeight}];
             size.height = lineHeight;
             size.width += 16; // margin right
             if (size.width > CGRectGetWidth(self.bounds)) {
